@@ -3,5 +3,11 @@
     "token": "",
     "clientId": "",
     "guildId": ""
+  },
+  "channels": {
+    "welcome": ""
+  },
+  "roles": {
+    "member": ""
   }
 }
