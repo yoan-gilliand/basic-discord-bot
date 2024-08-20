@@ -1,0 +1,13 @@
+# IDE config directory and files
+.idea/
+*.iml
+
+# Log directory and files
+log/
+*.log
+
+# Node.js modules
+node_modules/
+
+# OS files
+.DS_Store
