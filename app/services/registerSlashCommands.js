@@ -4,6 +4,10 @@ import config from '../config.json' assert { type: 'json' };
 // Définition des commandes
 const commands = [
   {
+    name: 'suggestion',
+    description: 'Envoyer une suggestion au serveur',
+  },
+  {
     name: 'setupcounters',
     description: 'Configurer les compteurs pour les membres et les followers',
   },
