@@ -1,5 +1,8 @@
 import { REST, Routes } from 'discord.js';
-import config from '../config.json' assert { type: 'json' };
+import fs from 'fs';
+
+const configPath = 'config.json';
+let config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
 // Définition des commandes
 const commands = [

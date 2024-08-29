@@ -1,5 +1,4 @@
 import { Client, GatewayIntentBits } from 'discord.js';
-import config from './config.json' assert { type: 'json' };
 import registerCommands from './services/registerSlashCommands.js';
 import handleWelcome from './features/welcome.js';
 import handlePunishCommand from './commands/punish.js';
@@ -8,6 +7,10 @@ import startLiveStatusCheck from './features/status.js';
 import handleCounterCommand from './features/counters.js';
 import handlePurgeCommand from './commands/purge.js';
 import handleSuggestionInteraction from './commands/suggestions.js';
+import fs from 'fs';
+
+const configPath = 'config.json';
+let config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
 async function startBot() {
   // Initialisation du client Discord
