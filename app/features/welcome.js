@@ -96,7 +96,7 @@ export default function handleWelcome(client) {
     }
 
     // Attribuer automatiquement le rôle à l'utilisateur
-    const role = member.guild.roles.cache.get(config.roles.user);
+    const role = member.guild.roles.cache.get(config.roles.member);
     if (role) {
       try {
         await member.roles.add(role);
