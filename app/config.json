@@ -5,9 +5,12 @@
     "guildId": ""
   },
   "channels": {
-    "welcome": ""
+    "welcome": "",
+    "moderationActions": ""
   },
   "roles": {
-    "member": ""
+    "member": "",
+    "warn1": "",
+    "warn2": ""
   }
 }
