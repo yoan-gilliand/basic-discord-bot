@@ -4,6 +4,14 @@ import config from '../config.json' assert { type: 'json' };
 // Définition des commandes
 const commands = [
   {
+    name: 'setupcounters',
+    description: 'Configurer les compteurs pour les membres et les followers',
+  },
+  {
+    name: 'removecounters',
+    description: 'Supprimer les compteurs de membres et de followers',
+  },
+  {
     name: 'punish',
     description:
       'Punir un membre du serveur (Avertissement 1, Avertissement 2, Bannisement)',
