@@ -9,7 +9,15 @@
     "clientSecret": "",
     "oauth": ""
   },
+  "socials": {
+    "instagram": "",
+    "tiktok": "",
+    "twitch": "",
+    "twitter": "",
+    "youtube": ""
+  },
   "channels": {
+    "twitchPings": "",
     "welcome": "",
     "moderationActions": ""
   },
