@@ -4,6 +4,8 @@ import registerCommands from './services/registerSlashCommands.js';
 import handleWelcome from './features/welcome.js';
 import handlePunishCommand from './commands/punish.js';
 import getTwitchOAuthToken from './auth/twitch.js';
+import startLiveStatusCheck from './features/status.js';
+import handleCounterCommand from './features/counters.js';
 
 async function startBot() {
   // Initialisation du client Discord
@@ -34,6 +36,12 @@ async function startBot() {
 
   // Démarrage de la gestion des avertissements et sanctions
   handlePunishCommand(client);
+
+  // Démarrage de la vérification du statut du streamer
+  startLiveStatusCheck(client);
+
+  // Démarrage de la gestion des compteurs
+  handleCounterCommand(client);
 
   // Connexion du bot
   client.login(config.bot.token);
