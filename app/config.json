@@ -4,6 +4,11 @@
     "clientId": "",
     "guildId": ""
   },
+  "twitch": {
+    "clientId": "",
+    "clientSecret": "",
+    "oauth": ""
+  },
   "channels": {
     "welcome": "",
     "moderationActions": ""
