@@ -30,6 +30,19 @@ const commands = [
       },
     ],
   },
+  {
+    name: 'purge',
+    description:
+      'Supprime un nombre de messages spécifié dans le canal actuel (maximum : 100 messages)',
+    options: [
+      {
+        name: 'amount',
+        type: 4,
+        description: 'Le nombre de messages à supprimer',
+        required: true,
+      },
+    ],
+  },
 ];
 
 // Fonction pour enregistrer les commandes
