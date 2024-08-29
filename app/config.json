@@ -18,6 +18,7 @@
   },
   "channels": {
     "twitchPings": "",
+    "suggestions": "",
     "welcome": "",
     "moderationActions": ""
   },

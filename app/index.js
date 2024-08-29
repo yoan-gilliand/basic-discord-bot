@@ -7,6 +7,7 @@ import getTwitchOAuthToken from './auth/twitch.js';
 import startLiveStatusCheck from './features/status.js';
 import handleCounterCommand from './features/counters.js';
 import handlePurgeCommand from './commands/purge.js';
+import handleSuggestionInteraction from './commands/suggestions.js';
 
 async function startBot() {
   // Initialisation du client Discord
@@ -46,6 +47,9 @@ async function startBot() {
 
   // Démarrage de la commande /purge
   handlePurgeCommand(client);
+
+  // Démarrage de la gestion des suggestions
+  handleSuggestionInteraction(client);
 
   // Connexion du bot
   client.login(config.bot.token);
