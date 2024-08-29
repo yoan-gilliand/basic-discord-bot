@@ -3,5 +3,28 @@
     "token": "",
     "clientId": "",
     "guildId": ""
+  },
+  "twitch": {
+    "clientId": "",
+    "clientSecret": "",
+    "oauth": ""
+  },
+  "socials": {
+    "instagram": "",
+    "tiktok": "",
+    "twitch": "",
+    "twitter": "",
+    "youtube": ""
+  },
+  "channels": {
+    "twitchPings": "",
+    "suggestions": "",
+    "welcome": "",
+    "moderationActions": ""
+  },
+  "roles": {
+    "member": "",
+    "warn1": "",
+    "warn2": ""
   }
 }
